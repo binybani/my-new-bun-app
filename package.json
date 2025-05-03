@@ -1,10 +1,10 @@
 {
   "name": "my-new-bun-app",
-  "module": "index.ts",
+  "module": "server/index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun index.ts",
-    "dev": "bun --watch index.ts"
+    "start": "bun server/index.ts",
+    "dev": "bun --watch server/index.ts"
   },
   "private": true,
   "devDependencies": {
@@ -14,6 +14,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@hono/zod-validator": "^0.5.0",
     "hono": "^4.7.5",
     "zod": "^3.24.2"
   }
