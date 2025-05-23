@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import { Button } from "@/components/ui/button"
 
 function App() {
@@ -9,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col bg-background">
+      <div className="flex flex-col max-w-md m-auto gap-y-5">
         <Button onClick={() => setCount((count) => count + 1)}>
           up
         </Button>
